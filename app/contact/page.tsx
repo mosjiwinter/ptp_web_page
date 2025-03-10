@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react"
+import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -70,7 +70,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-3xl font-bold tracking-tight">Get In Touch</h2>
               <p className="mt-4 text-muted-foreground">
-                We're here to answer any questions you may have about our services. Reach out to us and we'll respond as
+                We&apos;re here to answer any questions you may have about our services. Reach out to us and we&apos;ll respond as
                 soon as we can.
               </p>
               <div className="mt-8 space-y-6">
@@ -88,7 +88,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold">Email</h3>
                     <p className="mt-1">info@oiltrans.com</p>
-                    <p className="text-sm text-muted-foreground">We'll respond as soon as possible</p>
+                    <p className="text-sm text-muted-foreground">We&apos;ll respond as soon as possible</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -111,10 +111,7 @@ export default function ContactPage() {
                     <Instagram className="h-6 w-6" />
                     <span className="sr-only">Instagram</span>
                   </Link>
-                  {/* <Link href="https://linkedin.com" className="text-zinc-600 hover:text-amber-600">
-                    <Linkedin className="h-6 w-6" />
-                    <span className="sr-only">LinkedIn</span>
-                  </Link> */}
+                 
                 </div>
               </div>
             </div>

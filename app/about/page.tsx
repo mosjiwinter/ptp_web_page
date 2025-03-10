@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react"
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -42,9 +43,11 @@ export default function AboutPage() {
             </div>
             <div className="flex items-center justify-center">
               <div className="overflow-hidden rounded-lg">
-                <img
-                  src="/placeholder.svg?height=600&width=800"
+                <Image
+                  src="/placeholder.svg"
                   alt="Company history"
+                  width={800}
+                  height={600}
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -128,7 +131,7 @@ export default function AboutPage() {
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="flex flex-col items-center">
               <div className="mb-4 overflow-hidden rounded-full">
-                <img src="/placeholder.svg?height=200&width=200" alt="CEO" className="h-40 w-40 object-cover" />
+                <Image src="/placeholder.svg?height=200&width=200" alt="CEO" className="h-40 w-40 object-cover" />
               </div>
               <h3 className="text-xl font-bold">John Smith</h3>
               <p className="text-amber-600">Chief Executive Officer</p>
@@ -138,7 +141,7 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-col items-center">
               <div className="mb-4 overflow-hidden rounded-full">
-                <img src="/placeholder.svg?height=200&width=200" alt="COO" className="h-40 w-40 object-cover" />
+                <Image src="/placeholder.svg?height=200&width=200" alt="COO" className="h-40 w-40 object-cover" />
               </div>
               <h3 className="text-xl font-bold">Sarah Johnson</h3>
               <p className="text-amber-600">Chief Operations Officer</p>
@@ -149,7 +152,7 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-col items-center">
               <div className="mb-4 overflow-hidden rounded-full">
-                <img src="/placeholder.svg?height=200&width=200" alt="CTO" className="h-40 w-40 object-cover" />
+                <Image src="/placeholder.svg?height=200&width=200" alt="CTO" className="h-40 w-40 object-cover" />
               </div>
               <h3 className="text-xl font-bold">Michael Chen</h3>
               <p className="text-amber-600">Chief Technical Officer</p>

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image";
 import { ArrowRight, CheckCircle, Fuel, Shield, TruckIcon, Wrench } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -25,9 +26,11 @@ export default function ServicesPage() {
           <div className="grid gap-12 md:grid-cols-2">
             <div className="flex items-center justify-center">
               <div className="overflow-hidden rounded-lg">
-                <img
-                  src="/placeholder.svg?height=600&width=800"
+                <Image
+                  src="/placeholder.svg"
                   alt="Oil transportation"
+                  width={800}
+                  height={600}
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -123,9 +126,11 @@ export default function ServicesPage() {
             </div>
             <div className="flex items-center justify-center">
               <div className="overflow-hidden rounded-lg">
-                <img
-                  src="/placeholder.svg?height=600&width=800"
+                <Image
+                  src="/placeholder.svg?"
                   alt="Tank construction"
+                  width={800}
+                  height={600}
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -140,9 +145,11 @@ export default function ServicesPage() {
           <div className="grid gap-12 md:grid-cols-2">
             <div className="flex items-center justify-center">
               <div className="overflow-hidden rounded-lg">
-                <img
-                  src="/placeholder.svg?height=600&width=800"
+                <Image
+                  src="/placeholder.svg"
                   alt="Tank maintenance"
+                  width={800}
+                  height={600}
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -237,9 +244,11 @@ export default function ServicesPage() {
             </div>
             <div className="flex items-center justify-center">
               <div className="overflow-hidden rounded-lg">
-                <img
-                  src="/placeholder.svg?height=600&width=800"
+                <Image
+                  src="/placeholder.svg"
                   alt="Consulting services"
+                  width={800}
+                  height={600}
                   className="h-full w-full object-cover"
                 />
               </div>

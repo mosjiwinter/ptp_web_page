@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image";
 import { ArrowRight, CheckCircle, Fuel, MapPin, Phone, TruckIcon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -93,7 +94,7 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-4">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">About Our Company</h2>
               <p className="text-muted-foreground">
-                With over 20 years of experience in the oil industry, we've built a reputation for reliability, safety,
+                With over 20 years of experience in the oil industry, we&apos;ve built a reputation for reliability, safety,
                 and excellence in all our operations.
               </p>
               <p className="text-muted-foreground">
@@ -110,9 +111,11 @@ export default function Home() {
               </div>
             </div>
             <div className="overflow-hidden rounded-lg">
-              <img
-                src="/placeholder.svg?height=600&width=800"
+              <Image
+                src="/placeholder.svg"
                 alt="Oil storage facility"
+                width={800}
+                height={600}
                 className="h-full w-full object-cover"
               />
             </div>
@@ -130,9 +133,11 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="flex flex-col rounded-lg border bg-card shadow-sm">
               <div className="overflow-hidden rounded-t-lg">
-                <img
-                  src="/placeholder.svg?height=200&width=400"
+                <Image
+                  src="/placeholder.svg"
                   alt="News image"
+                  width={200}
+                  height={400}
                   className="h-48 w-full object-cover"
                 />
               </div>
@@ -142,15 +147,17 @@ export default function Home() {
                 </div>
                 <h3 className="mt-2 text-xl font-bold">ใหม่ Fleet Expansion</h3>
                 <p className="mt-2 text-muted-foreground">
-                  We're excited to announce the expansion of our transportation fleet with 10 new tanker trucks.
+                  We&apos;re excited to announce the expansion of our transportation fleet with 10 new tanker trucks.
                 </p>
               </div>
             </div>
             <div className="flex flex-col rounded-lg border bg-card shadow-sm">
               <div className="overflow-hidden rounded-t-lg">
-                <img
-                  src="/placeholder.svg?height=200&width=400"
+                <Image
+                  src="/placeholder.svg"
                   alt="News image"
+                  width={200}
+                  height={400}
                   className="h-48 w-full object-cover"
                 />
               </div>
@@ -166,9 +173,11 @@ export default function Home() {
             </div>
             <div className="flex flex-col rounded-lg border bg-card shadow-sm">
               <div className="overflow-hidden rounded-t-lg">
-                <img
-                  src="/placeholder.svg?height=200&width=400"
+                <Image
+                  src="/placeholder.svg"
                   alt="News image"
+                  width={200}
+                  height={400}
                   className="h-48 w-full object-cover"
                 />
               </div>
@@ -178,7 +187,7 @@ export default function Home() {
                 </div>
                 <h3 className="mt-2 text-xl font-bold">New Maintenance Facility</h3>
                 <p className="mt-2 text-muted-foreground">
-                  We've opened a new state-of-the-art maintenance facility to better serve our clients in the eastern
+                  We&apos;ve opened a new state-of-the-art maintenance facility to better serve our clients in the eastern
                   region.
                 </p>
               </div>
@@ -219,15 +228,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            {/* <div className="overflow-hidden rounded-lg">
-              <img
 
-                // src="/placeholder.svg?height=600&width=800"
-                alt="Contact our team"
-                className="h-full w-full object-cover"
-              />
-            </div> */
-            }
             <div className="overflow-hidden rounded-lg">
              <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2731.0576306281832!2d100.87396565255047!3d14.524896970444074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311de9d756100395%3A0xe5349d7195ee0dcd!2z4Lia4LiI4LiBLuC4nuC4teC4l-C4teC4nuC4tSDguYHguJfguIfguITguYwg4LmB4Lit4LiZ4LiU4LmM4LmA4LiX4Lij4Lil4LmA4Lil4Lit4Lij4LmMICjguJrguIjguIEu4LiK4LmI4Liy4LiH4LiI4Li04LmJ4LiZIOC4l-C4o-C4suC4meC4quC4m-C4reC4o-C5jOC4lSkg4LiL4LmI4Lit4LihIOC4quC4o-C5ieC4suC4hyDguYHguJfguIfguIHguYzguJnguYnguLPguKHguLHguJkg4Lia4Lix4LiX4LiX4Lit4Lih4LmC4Lir4Lil4LiUIOC4p-C4seC4lOC4meC5ieC4syDguILguJnguKrguYjguIfguJnguYnguLPguKHguLHguJk!5e0!3m2!1sen!2sth!4v1741598666769!5m2!1sen!2sth"
