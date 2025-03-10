@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
     config.resolve.fallback = {
       fs: false, // ป้องกันข้อผิดพลาดที่เกี่ยวข้องกับ fs
       path: false, // ป้องกันข้อผิดพลาดที่เกี่ยวกับ path
+      os: false, // ถ้าโปรเจกต์ไม่ได้ใช้ os module
+      crypto: false, // ถ้าโปรเจกต์ไม่ได้ใช้ crypto module
+      stream: false, // ถ้าโปรเจกต์ไม่ได้ใช้ stream module
+      util: false, // ถ้าโปรเจกต์ไม่ได้ใช้ util module
     };
     // ส่งกลับ config ที่ถูกปรับปรุง
     return config;
@@ -18,4 +22,4 @@ const nextConfig: NextConfig = {
   // ปรับแต่งการตั้งค่าคอมไพล์แบบอื่น ๆ ที่คุณต้องการ
 };
 
-export default nextConfig;
+module.exports = nextConfig;
