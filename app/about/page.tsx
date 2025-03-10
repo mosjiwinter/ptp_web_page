@@ -25,16 +25,16 @@ export default function AboutPage() {
               <div className="mt-6 space-y-4">
                 <p>
                   Founded in 2000, OilTrans began as a small oil transportation company with just three trucks. Over the
-                  years, we've grown into a comprehensive service provider for the oil industry, expanding our
+                  years, we&apos;ve grown into a comprehensive service provider for the oil industry, expanding our
                   operations to include tank construction and maintenance.
                 </p>
                 <p>
-                  Our journey has been marked by a commitment to safety, reliability, and innovation. We've continuously
+                  Our journey has been marked by a commitment to safety, reliability, and innovation. We &apos;ve continuously
                   invested in modern equipment and training for our team to ensure we deliver the highest quality
                   services to our clients.
                 </p>
                 <p>
-                  Today, we're proud to be one of the leading companies in the oil transportation and tank maintenance
+                  Today, we&apos;re proud to be one of the leading companies in the oil transportation and tank maintenance
                   industry, serving clients across the country with our fleet of modern tankers and team of skilled
                   technicians.
                 </p>
@@ -67,7 +67,7 @@ export default function AboutPage() {
               <h3 className="mb-4 text-xl font-bold">Our Mission</h3>
               <p>
                 To provide safe, efficient, and reliable oil transportation and tank maintenance services that exceed
-                our clients' expectations while maintaining the highest standards of safety and environmental
+                our clients&apos; expectations while maintaining the highest standards of safety and environmental
                 responsibility.
               </p>
             </div>

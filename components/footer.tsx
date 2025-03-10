@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Fuel, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react"
+import { Facebook, Fuel, Instagram,  Mail, MapPin, Phone } from "lucide-react"
 
 export function Footer() {
   return (
@@ -95,10 +95,7 @@ export function Footer() {
                   <Instagram className="h-5 w-5" />
                   <span className="sr-only">Instagram</span>
                 </Link>
-                {/* <Link href="https://linkedin.com" className="hover:text-amber-400">
-                  <Linkedin className="h-5 w-5" />
-                  <span className="sr-only">LinkedIn</span>
-                </Link> */}
+
               </li>
             </ul>
           </div>
