@@ -8,11 +8,11 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { MultiLanguageText } from "@/components/multi-language-text"
 import { LanguageSwitcher } from "@/components/language-switcher"
-import { useLanguage } from "@/contexts/language-context"
+
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
-  const { t } = useLanguage()
+  
 
   const closeSheet = () => {
     setIsOpen(false)
