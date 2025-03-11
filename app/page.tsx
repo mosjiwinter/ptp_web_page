@@ -9,8 +9,8 @@ import { FormattedDate } from "@/components/formatted-date"
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-        {/* Hero Section */}
-        <section className="relative bg-zinc-900 py-20 text-white">
+      {/* Hero Section */}
+      <section className="relative bg-zinc-900 py-20 text-white">
         <div className="absolute inset-0 z-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
         <div className="container relative z-10 mx-auto px-4 md:px-6">
           <div className="grid gap-6 md:grid-cols-2 md:gap-12">
@@ -22,7 +22,7 @@ export default function Home() {
                     th="บริการขนส่งน้ำมันและซ่อมบำรุงถังน้ำมันชั้นนำ"
                   />
                 </h1>
-                <p className="max-w-[600px] text-zinc-200 md:text-xl">
+                <p className="max-w-[600px] text-zinc-200 md:text-xl leading-loose">
                   <MultiLanguageText
                     en="Reliable oil transportation and expert tank maintenance services for the energy industry."
                     th="บริการขนส่งน้ำมันที่เชื่อถือได้และบริการซ่อมบำรุงถังน้ำมันโดยผู้เชี่ยวชาญสำหรับอุตสาหกรรมพลังงาน"
@@ -36,11 +36,18 @@ export default function Home() {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
-                <Link href="/contact">
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    <MultiLanguageText en="Contact Us" th="ติดต่อเรา" />
-                  </Button>
-                </Link>
+              
+                <Link href="/contact" passHref>
+  <Button
+    size="lg"
+    variant="outline"
+    className="text-white bg-gray-800 hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 border-gray-700"
+  >
+    <MultiLanguageText en="Contact Us" th="ติดต่อเรา" />
+  </Button>
+</Link>
+
+
               </div>
             </div>
           </div>
@@ -238,7 +245,7 @@ export default function Home() {
                 <div className="flex items-center gap-2">
                   <Phone className="h-5 w-5 text-amber-400" />
                   <span>080-657-8988</span>
-                  <span>(office)</span> 
+                  <span>(office)</span>
                   <span>or</span>
                   <span>085-496-3556</span>
                 </div>
@@ -259,8 +266,8 @@ export default function Home() {
             </div>
 
             <div className="overflow-hidden rounded-lg">
-             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2731.0576306281832!2d100.87396565255047!3d14.524896970444074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311de9d756100395%3A0xe5349d7195ee0dcd!2z4Lia4LiI4LiBLuC4nuC4teC4l-C4teC4nuC4tSDguYHguJfguIfguITguYwg4LmB4Lit4LiZ4LiU4LmM4LmA4LiX4Lij4Lil4LmA4Lil4Lit4Lij4LmMICjguJrguIjguIEu4LiK4LmI4Liy4LiH4LiI4Li04LmJ4LiZIOC4l-C4o-C4suC4meC4quC4m-C4reC4o-C5jOC4lSkg4LiL4LmI4Lit4LihIOC4quC4o-C5ieC4suC4hyDguYHguJfguIfguIHguYzguJnguYnguLPguKHguLHguJkg4Lia4Lix4LiX4LiX4Lit4Lih4LmC4Lir4Lil4LiUIOC4p-C4seC4lOC4meC5ieC4syDguILguJnguKrguYjguIfguJnguYnguLPguKHguLHguJk!5e0!3m2!1sen!2sth!4v1741598666769!5m2!1sen!2sth"
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2731.0576306281832!2d100.87396565255047!3d14.524896970444074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311de9d756100395%3A0xe5349d7195ee0dcd!2z4Lia4LiI4LiBLuC4nuC4teC4l-C4teC4nuC4tSDguYHguJfguIfguITguYwg4LmB4Lit4LiZ4LiU4LmM4LmA4LiX4Lij4Lil4LmA4Lil4Lit4Lij4LmMICjguJrguIjguIEu4LiK4LmI4Liy4LiH4LiI4Li04LmJ4LiZIOC4l-C4o-C4suC4meC4quC4m-C4reC4o-C5jOC4lSkg4LiL4LmI4Lit4LihIOC4quC4o-C5ieC4suC4hyDguYHguJfguIfguIHguYzguJnguYnguLPguKHguLHguJkg4Lia4Lix4LiX4LiX4Lit4Lih4LmC4Lir4Lil4LiUIOC4p-C4seC4lOC4meC5ieC4syDguILguJnguKrguYjguIfguJnguYnguLPguKHguLHguJk!5e0!3m2!1sen!2sth!4v1741598666769!5m2!1sen!2sth"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
