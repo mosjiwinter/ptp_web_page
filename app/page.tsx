@@ -3,35 +3,42 @@ import Image from "next/image";
 import { ArrowRight, CheckCircle, Fuel, MapPin, Phone, TruckIcon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { MultiLanguageText } from "@/components/multi-language-text"
 import { FormattedDate } from "@/components/formatted-date"
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      {/* Hero Section */}
-      <section className="relative bg-zinc-900 py-20 text-white">
+        {/* Hero Section */}
+        <section className="relative bg-zinc-900 py-20 text-white">
         <div className="absolute inset-0 z-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-20"></div>
         <div className="container relative z-10 mx-auto px-4 md:px-6">
           <div className="grid gap-6 md:grid-cols-2 md:gap-12">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                  Premier Oil Transport & Tank Maintenance
+                  <MultiLanguageText
+                    en="Premier Oil Transport & Tank Maintenance"
+                    th="บริการขนส่งน้ำมันและซ่อมบำรุงถังน้ำมันชั้นนำ"
+                  />
                 </h1>
                 <p className="max-w-[600px] text-zinc-200 md:text-xl">
-                  Reliable oil transportation and expert tank maintenance services for the energy industry.
+                  <MultiLanguageText
+                    en="Reliable oil transportation and expert tank maintenance services for the energy industry."
+                    th="บริการขนส่งน้ำมันที่เชื่อถือได้และบริการซ่อมบำรุงถังน้ำมันโดยผู้เชี่ยวชาญสำหรับอุตสาหกรรมพลังงาน"
+                  />
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/services">
                   <Button size="lg" className="bg-amber-500 text-black hover:bg-amber-400">
-                    Our Services
+                    <MultiLanguageText en="Our Services" th="บริการของเรา" />
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
                 <Link href="/contact">
                   <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    Contact Us
+                    <MultiLanguageText en="Contact Us" th="ติดต่อเรา" />
                   </Button>
                 </Link>
               </div>
@@ -44,42 +51,64 @@ export default function Home() {
       <section className="bg-white py-16">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Our Services</h2>
-            <p className="mt-4 text-muted-foreground">Comprehensive solutions for the oil industry</p>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+              <MultiLanguageText en="Our Services" th="บริการของเรา" />
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              <MultiLanguageText
+                en="Comprehensive solutions for the oil industry"
+                th="โซลูชั่นครบวงจรสำหรับอุตสาหกรรมน้ำมัน"
+              />
+            </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="flex flex-col items-center rounded-lg border bg-card p-6 text-center shadow-sm">
               <div className="mb-4 rounded-full bg-amber-100 p-3">
                 <TruckIcon className="h-8 w-8 text-amber-600" />
               </div>
-              <h3 className="mb-2 text-xl font-bold">Oil Transportation</h3>
+              <h3 className="mb-2 text-xl font-bold">
+                <MultiLanguageText en="Oil Transportation" th="การขนส่งน้ำมัน" />
+              </h3>
               <p className="text-muted-foreground">
-                Safe and efficient transportation of oil products with our modern fleet of tankers.
+                <MultiLanguageText
+                  en="Safe and efficient transportation of oil products with our modern fleet of tankers."
+                  th="การขนส่งผลิตภัณฑ์น้ำมันที่ปลอดภัยและมีประสิทธิภาพด้วยกองเรือที่ทันสมัยของเรา"
+                />
               </p>
             </div>
             <div className="flex flex-col items-center rounded-lg border bg-card p-6 text-center shadow-sm">
               <div className="mb-4 rounded-full bg-amber-100 p-3">
                 <Fuel className="h-8 w-8 text-amber-600" />
               </div>
-              <h3 className="mb-2 text-xl font-bold">Tank Construction</h3>
+              <h3 className="mb-2 text-xl font-bold">
+                <MultiLanguageText en="Tank Construction" th="การสร้างถังน้ำมัน" />
+              </h3>
               <p className="text-muted-foreground">
-                Custom design and construction of oil storage tanks built to international standards.
+                <MultiLanguageText
+                  en="Custom design and construction of oil storage tanks built to international standards."
+                  th="การออกแบบและก่อสร้างถังเก็บน้ำมันตามมาตรฐานสากล"
+                />
               </p>
             </div>
             <div className="flex flex-col items-center rounded-lg border bg-card p-6 text-center shadow-sm">
               <div className="mb-4 rounded-full bg-amber-100 p-3">
                 <CheckCircle className="h-8 w-8 text-amber-600" />
               </div>
-              <h3 className="mb-2 text-xl font-bold">Maintenance Services</h3>
+              <h3 className="mb-2 text-xl font-bold">
+                <MultiLanguageText en="Maintenance Services" th="บริการซ่อมบำรุง" />
+              </h3>
               <p className="text-muted-foreground">
-                Comprehensive maintenance and repair services for all types of oil storage facilities.
+                <MultiLanguageText
+                  en="Comprehensive maintenance and repair services for all types of oil storage facilities."
+                  th="บริการซ่อมบำรุงและซ่อมแซมครบวงจรสำหรับสิ่งอำนวยความสะดวกในการเก็บน้ำมันทุกประเภท"
+                />
               </p>
             </div>
           </div>
           <div className="mt-12 text-center">
             <Link href="/services">
               <Button variant="outline" size="lg">
-                View All Services
+                <MultiLanguageText en="View All Services" th="ดูบริการทั้งหมด" />
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -94,7 +123,7 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-4">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">About Our Company</h2>
               <p className="text-muted-foreground">
-                With over 20 years of experience in the oil industry, we&apos;ve built a reputation for reliability, safety,
+                With over 20 years of experience in the oil industry, we &apos; ve built a reputation for reliability, safety,
                 and excellence in all our operations.
               </p>
               <p className="text-muted-foreground">

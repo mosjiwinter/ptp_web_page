@@ -131,7 +131,7 @@ export default function AboutPage() {
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="flex flex-col items-center">
               <div className="mb-4 overflow-hidden rounded-full">
-                <Image src="/placeholder.svg?height=200&width=200" alt="CEO" className="h-40 w-40 object-cover" />
+                 <Image src="/placeholder.svg" width={200} height={200} alt="CEO" className="h-40 w-40 object-cover" />
               </div>
               <h3 className="text-xl font-bold">John Smith</h3>
               <p className="text-amber-600">Chief Executive Officer</p>
@@ -141,7 +141,7 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-col items-center">
               <div className="mb-4 overflow-hidden rounded-full">
-                <Image src="/placeholder.svg?height=200&width=200" alt="COO" className="h-40 w-40 object-cover" />
+                <Image src="/placeholder.svg" width={200} height={200} alt="COO" className="h-40 w-40 object-cover" />
               </div>
               <h3 className="text-xl font-bold">Sarah Johnson</h3>
               <p className="text-amber-600">Chief Operations Officer</p>
@@ -152,7 +152,7 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-col items-center">
               <div className="mb-4 overflow-hidden rounded-full">
-                <Image src="/placeholder.svg?height=200&width=200" alt="CTO" className="h-40 w-40 object-cover" />
+                 <Image src="/placeholder.svg" width={200} height={200} alt="CTO" className="h-40 w-40 object-cover" />
               </div>
               <h3 className="text-xl font-bold">Michael Chen</h3>
               <p className="text-amber-600">Chief Technical Officer</p>
