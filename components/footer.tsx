@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Fuel, Instagram,  Mail, MapPin, Phone } from "lucide-react"
+import { MultiLanguageText } from "@/components/multi-language-text"
 
 export function Footer() {
   return (
@@ -18,7 +19,10 @@ export function Footer() {
             (Chang Jin Transport Co., Ltd.)
             </p>
             <p className="mt-4 max-w-xs">
-              Professional oil transportation and tank maintenance services for the energy industry.
+               <MultiLanguageText
+               en="Professional oil transportation and tank maintenance services for the energy industry."
+               th="บริการขนส่งน้ำมันและบำรุงรักษาถังระดับมืออาชีพสำหรับอุตสาหกรรมพลังงาน"/>
+
             </p>
           </div>
           <div>
@@ -26,22 +30,30 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="hover:text-amber-400">
-                  Home
+                <MultiLanguageText
+                en="Home"
+                th="หน้าหลัก"/>
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="hover:text-amber-400">
-                  About Us
+                <MultiLanguageText
+                en="About Us"
+                th="เกี่ยวกับเรา"/>
                 </Link>
               </li>
               <li>
                 <Link href="/services" className="hover:text-amber-400">
-                  Services
+                  <MultiLanguageText
+                  en="Services"
+                  th="บริการ"/>
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-amber-400">
-                  Contact
+                  <MultiLanguageText
+                  en="Contact"
+                  th="ติดต่อ"/>
                 </Link>
               </li>
             </ul>
@@ -51,22 +63,30 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/services#transportation" className="hover:text-amber-400">
-                  Oil Transportation
+                <MultiLanguageText
+                en="Oil Transportation"
+                th="การขนส่งน้ำมัน"/>
                 </Link>
               </li>
               <li>
                 <Link href="/services#construction" className="hover:text-amber-400">
-                  Tank Construction
+                <MultiLanguageText
+                en="Oil Tank Construction"
+                th="การสร้างแท้งน้ำมัน"/>
                 </Link>
               </li>
               <li>
                 <Link href="/services#maintenance" className="hover:text-amber-400">
-                  Maintenance Services
+                <MultiLanguageText
+                en="Tank Maintenance Services"
+                th="บริการบำรุงรักษาถัง"/>
                 </Link>
               </li>
               <li>
                 <Link href="/services#consulting" className="hover:text-amber-400">
-                  Consulting
+                <MultiLanguageText
+                en="Oil Tank Consulting"
+                th="การให้คำปรึกษาเกี่ยวกับถังน้ำมัน"/>
                 </Link>
               </li>
             </ul>
@@ -76,7 +96,8 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <Phone className="h-5 w-5 text-amber-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>+660-657-8988
+                </span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-amber-400" />
@@ -84,7 +105,11 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 text-amber-400" />
-                <span>61 Moo 9, Suan Dok Mai Subdistrict, Sao Hai District, Saraburi</span>
+                <span>
+                <MultiLanguageText
+                    en="61 Moo 9, Suan Dok Mai Subdistrict, Sao Hai District, Saraburi"
+                    th="61 หมู่ 9 ตำบลสวนดอกไม้ อำเภอเสาไห้ จังหวัดสระบุรี"/>
+                </span>
               </li>
               <li className="mt-4 flex items-center gap-4">
                 <Link href="https://facebook.com" className="hover:text-amber-400">

@@ -128,19 +128,25 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-10 md:grid-cols-2">
             <div className="flex flex-col justify-center space-y-4">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">About Our Company</h2>
-              <p className="text-muted-foreground">
-                With over 20 years of experience in the oil industry, we &apos; ve built a reputation for reliability, safety,
-                and excellence in all our operations.
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl"> 
+              <MultiLanguageText
+                  en="About Our Company"
+                  th="บริษัทของเรา"/></h2>
+              <p className="text-muted-foreground"><MultiLanguageText
+                  en=" With over 20 years of experience in the oil industry, we &apos; ve built a reputation for reliability, safety,
+                and excellence in all our operations."
+                  th="ด้วยประสบการณ์ในอุตสาหกรรมน้ำมันมากกว่า 20 ปี เราได้สร้างชื่อเสียงในด้านความน่าเชื่อถือ ความปลอดภัย และความเป็นเลิศในทุกการดำเนินงานของเรา"/>
               </p>
-              <p className="text-muted-foreground">
-                Our team of experts is dedicated to providing the highest quality services for oil transportation and
-                tank maintenance.
+              <p className="text-muted-foreground"><MultiLanguageText
+               en="Our team of experts is dedicated to providing the highest quality services for oil transportation and tank maintenance."
+                th="ทีมผู้เชี่ยวชาญของเรามุ่งมั่นที่จะมอบบริการที่มีคุณภาพสูงสุดสำหรับการขนส่งน้ำมันและการบำรุงรักษาถัง"/>
               </p>
               <div>
                 <Link href="/about">
                   <Button variant="outline">
-                    Learn More About Us
+                  <MultiLanguageText
+                  en="Learn More About Us"
+                  th="เรียนรู้เพิ่มเติมเกี่ยวกับเรา"/>
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
@@ -163,8 +169,16 @@ export default function Home() {
       <section className="bg-white py-16">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Latest News</h2>
-            <p className="mt-4 text-muted-foreground">Stay updated with our company news and industry insights</p>
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl"> 
+            <MultiLanguageText
+                    en="Latest News"
+                    th="ข่าวล่าสุด"/>
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+            <MultiLanguageText
+                    en="Stay updated with our company news and industry insights"
+                    th="ติดตามข่าวสารบริษัทและข้อมูลเชิงลึกของอุตสาหกรรมของเรา"/>
+            </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="flex flex-col rounded-lg border bg-card shadow-sm">
@@ -179,7 +193,7 @@ export default function Home() {
               </div>
               <div className="flex-1 p-6">
                 <div className="text-sm text-muted-foreground">
-                  <FormattedDate date={new Date(2023, 11, 15)} />
+                  <FormattedDate date={new Date(2025, 11, 15)} />
                 </div>
                 <h3 className="mt-2 text-xl font-bold">ใหม่ Fleet Expansion</h3>
                 <p className="mt-2 text-muted-foreground">
@@ -199,7 +213,7 @@ export default function Home() {
               </div>
               <div className="flex-1 p-6">
                 <div className="text-sm text-muted-foreground">
-                  <FormattedDate date={new Date(2023, 10, 28)} />
+                  <FormattedDate date={new Date(2025, 10, 28)} />
                 </div>
                 <h3 className="mt-2 text-xl font-bold">Safety Award Recognition</h3>
                 <p className="mt-2 text-muted-foreground">
@@ -219,7 +233,7 @@ export default function Home() {
               </div>
               <div className="flex-1 p-6">
                 <div className="text-sm text-muted-foreground">
-                  <FormattedDate date={new Date(2023, 9, 10)} />
+                  <FormattedDate date={new Date(2025, 9, 10)} />
                 </div>
                 <h3 className="mt-2 text-xl font-bold">New Maintenance Facility</h3>
                 <p className="mt-2 text-muted-foreground">
@@ -239,26 +253,42 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-4">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Get In Touch</h2>
               <p className="text-zinc-200">
-                Contact us today to discuss your oil transportation and tank maintenance needs.
+              <MultiLanguageText
+                en="Contact us today to discuss your oil transportation and tank maintenance needs."
+                th="ติดต่อเราวันนี้เพื่อพูดคุยเกี่ยวกับความต้องการในการขนส่งน้ำมันและการบำรุงรักษาถังของคุณ"/>
               </p>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <Phone className="h-5 w-5 text-amber-400" />
                   <span>080-657-8988</span>
-                  <span>(office)</span>
-                  <span>or</span>
+                  <span>
+                  <MultiLanguageText
+                  en="(office)"
+                  th="(สำนักงาน)"/>
+                  </span>
+                  <span>
+                  <MultiLanguageText
+                  en="or"
+                  th="หรือ"/>
+                  </span>
                   <span>085-496-3556</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="h-5 w-5 text-amber-400" />
                   {/* <span>PTP Tank & Trailer Co., Ltd. (Chang Jin Transport Co., Ltd.)</span> */}
-                  <span>61 Moo 9, Suan Dok Mai Subdistrict, Sao Hai District, Saraburi</span>
+                  <span>
+                  <MultiLanguageText
+                    en="61 Moo 9, Suan Dok Mai Subdistrict, Sao Hai District, Saraburi"
+                    th="61 หมู่ 9 ตำบลสวนดอกไม้ อำเภอเสาไห้ จังหวัดสระบุรี"/>
+                    </span>
                 </div>
               </div>
               <div>
                 <Link href="/contact">
                   <Button className="bg-amber-500 text-black hover:bg-amber-400">
-                    Contact Us
+                  <MultiLanguageText
+                  en="Contact Us"
+                  th="ติดต่อเรา"/>
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
